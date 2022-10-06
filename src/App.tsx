@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import {
 	BrowserRouter,
 	Routes,
@@ -10,8 +9,10 @@ import {
 } from "react-router-dom";
 
 //import
+import "./Global/GlobalStyles.css";
+import "./Global/flexboxgrid.min.css";
 import {Home, Villas, Services} from "src/components/pages";
-import {NavBar} from "src/components/UI/molecules";
+import {NavBar, Footer} from "src/components/UI/molecules";
 
 const Casa = () => {
 	const {tipo} = useParams();
@@ -46,7 +47,7 @@ const NotFound = () => {
 
 function App() {
 	return (
-		<div className="App">
+		<div className="JScontainer">
 			<NavBar />
 
 			<Routes>
@@ -58,6 +59,8 @@ function App() {
 				</Route>
 				<Route path="/*" element={<NotFound />} />
 			</Routes>
+
+			<Footer />
 		</div>
 	);
 }

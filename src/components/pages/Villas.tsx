@@ -1,9 +1,10 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import "./villas.css";
 
 export const Villas = () => {
 	return (
-		<div>
+		<div className="">
 			Villas
 			<ul>
 				<li>

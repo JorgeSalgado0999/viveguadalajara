@@ -1,4 +1,4 @@
-import {Home} from "./Home";
+import {Home} from "./home/Home";
 import {Villas} from "./Villas";
 import {Services} from "./Services";
 
